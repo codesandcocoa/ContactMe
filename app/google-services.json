@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "184146947769",
+    "firebase_url": "https://contactme-85ffe.firebaseio.com",
+    "project_id": "contactme-85ffe",
+    "storage_bucket": "contactme-85ffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184146947769:android:10dd25d66c616521b6b568",
+        "android_client_info": {
+          "package_name": "amhacks.contactme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184146947769-hnelgandio4jb4eqhaqgtdbr9h5v2qbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkqszqW2tcHI4jK9mBb8WGE3dw2akunng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184146947769-hnelgandio4jb4eqhaqgtdbr9h5v2qbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
