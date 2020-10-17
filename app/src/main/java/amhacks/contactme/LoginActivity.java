@@ -1,23 +1,27 @@
 package amhacks.contactme;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -70,9 +74,32 @@ public class LoginActivity extends AppCompatActivity {
                                     {
                                         loadingBar.dismiss();
                                         Toast.makeText(LoginActivity.this, "Success", Toast.LENGTH_SHORT).show();
-                                        Intent dashboardIntent = new Intent(LoginActivity.this, DashboardActivity.class);
-                                        dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                        startActivity(dashboardIntent);
+                                        DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("Users");
+                                        String currentUserID = mAuth.getCurrentUser().getUid();
+                                        usersRef.child(currentUserID).addValueEventListener(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                if (snapshot.exists())
+                                                {
+                                                    Intent dashboardIntent = new Intent(LoginActivity.this, DashboardActivity.class);
+                                                    dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                                    startActivity(dashboardIntent);
+                                                }
+                                                else
+                                                {
+                                                    Intent dashboardIntent = new Intent(LoginActivity.this, AddProfileActivity.class);
+                                                    dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                                    startActivity(dashboardIntent);
+                                                }
+
+                                            }
+
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                            }
+                                        });
+
                                     }
                                     else
                                     {
