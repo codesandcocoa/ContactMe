@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/white"/>
+    <support-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true">
     <item>
-        <bitmap android:src="drawable/Screenshot from 2020-10-14 15-24-54.png"
-            android:gravity="center"/>
+        <bitmap android:src="@drawable/midnight"
+            android:gravity="center"
+            />
     </item>
-
+    </support-screens>
 </layer-list>
