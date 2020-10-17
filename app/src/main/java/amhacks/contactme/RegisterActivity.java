@@ -61,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         if (task.isSuccessful())
                                         {
                                             progressDialog.dismiss();
-                                            Intent DashIntent = new Intent(RegisterActivity.this, AddProfileActivity.class);
+                                            Intent DashIntent = new Intent(RegisterActivity.this, DashboardActivity.class);
                                             DashIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                             startActivity(DashIntent);
                                         }

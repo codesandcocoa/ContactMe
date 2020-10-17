@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 @SuppressWarnings("ALL")
 public class SplashActivity extends AppCompatActivity {
-    private static int SPLASH_SCREEN_TIME_OUT=2000;
+    private static int SPLASH_SCREEN_TIME_OUT=6000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent i=new Intent(SplashActivity.this,
-                        MainActivity.class);
+                        LoginActivity.class);
                 //Intent is used to switch from one activity to another.
 
                 startActivity(i);

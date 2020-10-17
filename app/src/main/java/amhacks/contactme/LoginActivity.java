@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
                                                 }
                                                 else
                                                 {
-                                                    Intent dashboardIntent = new Intent(LoginActivity.this, AddProfileActivity.class);
+                                                    Intent dashboardIntent = new Intent(LoginActivity.this, DashboardActivity.class);
                                                     dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                                     startActivity(dashboardIntent);
                                                 }
