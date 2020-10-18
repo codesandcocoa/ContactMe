@@ -22,7 +22,7 @@
  
 <h3>Workflow of Our Application:-</h3>
 
-<img src="https://user-images.githubusercontent.com/53506835/96382860-163cd800-11ae-11eb-8f57-7f2719b81e70.png">
+<kbd><img src="https://user-images.githubusercontent.com/53506835/96382860-163cd800-11ae-11eb-8f57-7f2719b81e70.png"></kbd>
 
 
 <h3> Steps for using</h3>
