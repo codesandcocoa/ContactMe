@@ -86,7 +86,7 @@ public class RequestsActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         HashMap hashMap = new HashMap();
-                        hashMap.put(currentUserID,currentUserID);
+                        hashMap.put("validation","success");
                         Toast.makeText(RequestsActivity.this, user, Toast.LENGTH_SHORT).show();
                         usersRef.child(user).child("Cards").child(currentUserID).updateChildren(hashMap)
                                 .addOnCompleteListener(new OnCompleteListener() {
