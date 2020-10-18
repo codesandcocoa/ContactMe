@@ -40,3 +40,11 @@
   <li><a href="https://console.firebase.google.com/?pli=1">Visit the Firebase site for more knowledge on this</a></li>
   <li>If you get compatibility issues go to android folder, right click and click on migrate and then migrate project to Android X.</li>
 </ul>
+
+
+### Screenshots of The Application:-
+<img src="https://user-images.githubusercontent.com/53506835/96385265-66b53500-11b0-11eb-89d2-a419babf5ef6.png">
+<img src="https://user-images.githubusercontent.com/53506835/96385309-ad0a9400-11b0-11eb-8781-b183105ed4ca.png">
+
+### Google Cloud Integration:-
+<img src="https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png" >
