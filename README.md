@@ -1,4 +1,5 @@
 ## contactME
+------------------
 <img src="https://cdn.vox-cdn.com/thumbor/1SrcuHFZ70PO7OPgSb2_DxM3gUk=/0x0:640x427/1820x1213/filters:focal(0x0:640x427):format(webp)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg" height="44" width="55"><img src="https://pbs.twimg.com/profile_images/1105378972156649472/9W16lxHj_400x400.png" height="44" width="48"><img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png" height="44" width="48">
 <br>
 <img src="https://lh6.googleusercontent.com/A7eKVcKXwriPTd0TL9DngAocPPQpG6iKPFMd84_NkL-EQAct95-A1NFmEz5cgd7IEmRVaKqv98rl0mhIDbznazmhqxwksrjYnh1qEXqSrOOV3d7x0TqUd7cXGVS9ttCh-mVluyeWhFM">
@@ -12,7 +13,9 @@
  </ul>
  <p>So digitizing this process is the right thing to do, also keeping in mind the current CoVID-19 era. This will not only ensure your own safety but also of others</p>
 <h3>Workflow of Our Application:-</h3>
+
 <img src="https://user-images.githubusercontent.com/53506835/96382860-163cd800-11ae-11eb-8f57-7f2719b81e70.png">
+
 
 <h3> Steps for using</h3>
 <ul>
@@ -46,9 +49,12 @@
 So Be sure that your data is in safe hands :)</p>
 
 ### Screenshots of The Application:-
+------------------
 <img src="https://user-images.githubusercontent.com/53506835/96385265-66b53500-11b0-11eb-89d2-a419babf5ef6.png">
 <img src="https://user-images.githubusercontent.com/53506835/96385309-ad0a9400-11b0-11eb-8781-b183105ed4ca.png">
 <img src="https://user-images.githubusercontent.com/53506835/96385437-97499e80-11b1-11eb-9c9d-ba56219e8ba0.png">
 
 ### Google Cloud Integration:-
+------------------
 <img src="https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png" >
+
