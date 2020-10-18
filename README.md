@@ -49,5 +49,6 @@ So Be sure that your data is in safe hands :)</p>
 <img src="https://user-images.githubusercontent.com/53506835/96385265-66b53500-11b0-11eb-89d2-a419babf5ef6.png">
 <img src="https://user-images.githubusercontent.com/53506835/96385309-ad0a9400-11b0-11eb-8781-b183105ed4ca.png">
 <img src="https://user-images.githubusercontent.com/53506835/96385437-97499e80-11b1-11eb-9c9d-ba56219e8ba0.png">
+
 ### Google Cloud Integration:-
 <img src="https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png" >
