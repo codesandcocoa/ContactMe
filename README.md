@@ -65,6 +65,5 @@ So Be sure that your data is in safe hands :)</p>
 ### Google Cloud Integration:-
 ------------------
 <img src="https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png" >
-### How do you believe that your data is safe?
-This Application uses Google’s Firebase service to store and process data.Google uses  symmetric block cypher that is the Advanced Encryption Standard (AES) algorithm to encrypt data at rest. All data at the storage level is encrypted with AES256 by default.Google uses tink which incorporates FIPS 140-2 validated module to implement encryption consistently across almost all google cloud products. 
+
 
