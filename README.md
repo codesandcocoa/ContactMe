@@ -11,6 +11,9 @@
     <li>Each year 100 billion business cards are produced worldwide leading to the potential loss of approaching 6 million trees.Perhaps more shocking is the fact that within a week after receiving a business card, almost 90% of them are thrown away. Some of these cards will be recycled, but many will find their way into landfill.</li>
     <li>You need to carry it everywhere which makes it similar to clothes but businesss cards are not clothes!</li>
     <li>Most of the people throw these cards within a week which leads to waste of paper.</li>
+    <li>dIn a landfill paper decomposes releasing methane gas that is over 20 times more potent a green 
+      House gas than Co2.</li>
+
  </ul>
  <p>So digitizing this process is the right thing to do, also keeping in mind the current CoVID-19 era. This will not only ensure your own safety but also of others.</p>
  
