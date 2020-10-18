@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardsActivity"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/cards_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cards"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:id="@+id/no_cards_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:text="Currently you don't have any cards in your wallet"
+        android:layout_below="@id/cards_title1"
+        android:textSize="20sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_cards_text"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cards_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            />
+    </ScrollView>
+
+
+</RelativeLayout>

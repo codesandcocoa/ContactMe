@@ -52,6 +52,13 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(pIntent);
             }
         });
+        walletLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cIntent = new Intent(DashboardActivity.this,CardsActivity.class);
+                startActivity(cIntent);
+            }
+        });
 
 
 
