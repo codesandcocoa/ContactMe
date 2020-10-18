@@ -8,10 +8,12 @@
 <h3>Why are we building this application?</h3>
 <p>In the business world,the business card is very important. But then there are certain demerits to this thing</p>
   <ul>
+    <li>Each year 100 billion business cards are produced worldwide leading to the potential loss of approaching 6 million trees.Perhaps more shocking is the fact that within a week after receiving a business card, almost 90% of them are thrown away.</li>
     <li>You need to carry it everywhere which makes it similar to clothes but businesss cards are not clothes!</li>
     <li>Most of the people throw these cards within a week which leads to waste of paper.</li>
  </ul>
- <p>So digitizing this process is the right thing to do, also keeping in mind the current CoVID-19 era. This will not only ensure your own safety but also of others</p>
+ <p>So digitizing this process is the right thing to do, also keeping in mind the current CoVID-19 era. This will not only ensure your own safety but also of others.</p>
+ 
 <h3>Workflow of Our Application:-</h3>
 
 <img src="https://user-images.githubusercontent.com/53506835/96382860-163cd800-11ae-11eb-8f57-7f2719b81e70.png">
