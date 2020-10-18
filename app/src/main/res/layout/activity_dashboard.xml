@@ -38,8 +38,7 @@
                 android:layout_below="@id/welcome_back"
                 >
                 <LinearLayout
-
-                    android:id="@+id/qr_scan"
+                    android:id="@+id/qr_scan_llt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -60,6 +59,7 @@
                         />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/wallet_llt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -86,6 +86,7 @@
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
+                    android:id="@+id/mycard_llt"
                     >
                     <ImageView
                         android:layout_width="75dp"
@@ -106,6 +107,7 @@
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
+                    android:id="@+id/profile_llt"
                     android:layout_marginLeft="20dp"
                     >
                     <ImageView
@@ -117,6 +119,50 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Profile"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:id="@+id/requests_llt"
+                    >
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/add_icon"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Requests"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/settings_llt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_settings"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
                         android:textStyle="bold"
                         android:textSize="18sp"
                         />
