@@ -1,5 +1,7 @@
 package amhacks.contactme;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,6 +77,17 @@ public class CardsActivity extends AppCompatActivity {
             public CardsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 final View view = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.cards_view_layout,parent,false);
+
+                view.findViewById(R.id.call_button).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String s = "tel:" + phone;
+                        Intent intent = new Intent(Intent.ACTION_DIAL);
+                        intent.setData(Uri.parse(s));
+                        startActivity(intent);
+
+                    }
+                });
 
 
                 return new CardsViewHolder(view);
