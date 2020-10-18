@@ -8,7 +8,7 @@
 <h3>Why are we building this application?</h3>
 <p>In the business world,the business card is very important. But then there are certain demerits to this thing</p>
   <ul>
-    <li>Each year 100 billion business cards are produced worldwide leading to the potential loss of approaching 6 million trees.Perhaps more shocking is the fact that within a week after receiving a business card, almost 90% of them are thrown away.</li>
+    <li>Each year 100 billion business cards are produced worldwide leading to the potential loss of approaching 6 million trees.Perhaps more shocking is the fact that within a week after receiving a business card, almost 90% of them are thrown away. Some of these cards will be recycled, but many will find their way into landfill.</li>
     <li>You need to carry it everywhere which makes it similar to clothes but businesss cards are not clothes!</li>
     <li>Most of the people throw these cards within a week which leads to waste of paper.</li>
  </ul>
