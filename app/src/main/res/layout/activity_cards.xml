@@ -30,7 +30,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/no_cards_text"
         android:layout_marginTop="10dp"
         android:layout_alignParentBottom="true"
@@ -38,7 +38,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/cards_recycler_view"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="5dp"
             />
     </ScrollView>

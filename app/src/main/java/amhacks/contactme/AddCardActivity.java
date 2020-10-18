@@ -3,7 +3,6 @@ package amhacks.contactme;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
@@ -77,9 +76,10 @@ public class AddCardActivity extends AppCompatActivity {
                                             if (task.isSuccessful())
                                             {
                                                 Toast.makeText(AddCardActivity.this, "Request sent", Toast.LENGTH_SHORT).show();
-                                                Intent dashIntent = new Intent(AddCardActivity.this,DashboardActivity.class);
+                                           /*     Intent dashIntent = new Intent(AddCardActivity.this,DashboardActivity.class);
                                                 dashIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                                startActivity(dashIntent);
+                                                startActivity(dashIntent);*/
+                                           finish();
                                             }
                                             else
                                             {

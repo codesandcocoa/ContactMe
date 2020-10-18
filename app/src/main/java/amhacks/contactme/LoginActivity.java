@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                                     if (task.isSuccessful())
                                     {
                                         loadingBar.dismiss();
-                                        Toast.makeText(LoginActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                                      /*  Toast.makeText(LoginActivity.this, "Success", Toast.LENGTH_SHORT).show();*/
                                         DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("Users");
                                         String currentUserID = mAuth.getCurrentUser().getUid();
                                         usersRef.child(currentUserID).addValueEventListener(new ValueEventListener() {
@@ -85,6 +85,13 @@ public class LoginActivity extends AppCompatActivity {
                                                     dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                                     startActivity(dashboardIntent);
                                                 }
+                                                else
+                                                {
+                                                    Intent dashboardIntent = new Intent(LoginActivity.this, AddProfileActivity.class);
+                                                    dashboardIntent.putExtra("type","new");
+                                                    dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                                    startActivity(dashboardIntent);
+                                                }
 
                                             }
 
@@ -93,11 +100,6 @@ public class LoginActivity extends AppCompatActivity {
 
                                             }
                                         });
-
-                                        Intent dashboardIntent = new Intent(LoginActivity.this, AddProfileActivity.class);
-                                        dashboardIntent.putExtra("type","new");
-                                        dashboardIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                        startActivity(dashboardIntent);
 
                                     }
                                     else
