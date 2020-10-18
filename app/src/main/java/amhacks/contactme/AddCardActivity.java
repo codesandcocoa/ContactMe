@@ -67,8 +67,8 @@ public class AddCardActivity extends AppCompatActivity {
                             SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault());
                             final String formattedDate = df.format(c);
                             HashMap hashMap = new HashMap();
-                            hashMap.put(currentUserID,formattedDate);
-                            usersRef.child(pID).child("Requests").updateChildren(hashMap)
+                            hashMap.put("date",formattedDate);
+                            usersRef.child(pID).child("Requests").child(currentUserID).updateChildren(hashMap)
                                     .addOnCompleteListener(new OnCompleteListener() {
                                         @Override
                                         public void onComplete(@NonNull Task task) {
