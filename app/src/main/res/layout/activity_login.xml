@@ -52,6 +52,7 @@
                 android:layout_below="@id/login_email_et"
                 android:layout_centerHorizontal="true"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:drawableTint="@android:color/holo_blue_dark"
                 android:drawablePadding="10dp"
                 android:drawableLeft="@drawable/lock_icon"

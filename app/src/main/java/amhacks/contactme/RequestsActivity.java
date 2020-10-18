@@ -80,14 +80,14 @@ public class RequestsActivity extends AppCompatActivity {
             public RequestsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 final View view = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.requests_view_layout,parent,false);
-                TextView name  = view.findViewById(R.id.person_name_requests);
-                name.setText(fullname);
+
                 view.findViewById(R.id.acpt_button).setOnClickListener(new View.OnClickListener()
                 {
                     @Override
                     public void onClick(View v) {
                         HashMap hashMap = new HashMap();
                         hashMap.put(currentUserID,currentUserID);
+                        Toast.makeText(RequestsActivity.this, user, Toast.LENGTH_SHORT).show();
                         usersRef.child(user).child("Cards").child(currentUserID).updateChildren(hashMap)
                                 .addOnCompleteListener(new OnCompleteListener() {
                                     @Override
@@ -119,7 +119,7 @@ public class RequestsActivity extends AppCompatActivity {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull RequestsViewHolder holder, int position, @NonNull Requests model) {
+            protected void onBindViewHolder(@NonNull final RequestsViewHolder holder, int position, @NonNull final Requests model) {
                     user = getRef(position).getKey();
 
                     usersRef.child(user).addValueEventListener(new ValueEventListener() {
@@ -128,6 +128,8 @@ public class RequestsActivity extends AppCompatActivity {
                             if (snapshot.exists())
                             {
                                 fullname = snapshot.child("fullname").getValue().toString();
+                              //  Toast.makeText(RequestsActivity.this, fullname, Toast.LENGTH_SHORT).show();
+                                holder.setName(fullname);
                             }
                         }
 
@@ -175,5 +177,10 @@ public class RequestsActivity extends AppCompatActivity {
             mView = itemView;
         }
         public void setDate(String date) {}
+        public void setName(String namer)
+        {
+            TextView namers  = mView.findViewById(R.id.person_name_requests);
+            namers.setText(namer);
+        }
     }
 }

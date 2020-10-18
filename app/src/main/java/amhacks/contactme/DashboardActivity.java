@@ -37,6 +37,14 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+        ScanQRLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sIntent = new Intent(DashboardActivity.this,AddCardActivity.class);
+                startActivity(sIntent);
+            }
+        });
+
 
 
     }

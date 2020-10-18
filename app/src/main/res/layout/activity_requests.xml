@@ -7,7 +7,7 @@
     tools:context=".RequestsActivity"
     android:background="@drawable/bg3">
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         app:cardElevation="15dp"
         app:cardCornerRadius="10dp"
@@ -40,15 +40,21 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 />
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/requests_recycler_view"
-                android:layout_width="wrap_content"
+            <ScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/no_pending_text"
-                android:padding="5dp"
                 android:layout_centerHorizontal="true"
-                android:foregroundGravity="center_horizontal"
-                />
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/requests_recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:foregroundGravity="center_horizontal"
+                    />
+            </ScrollView>
+
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
