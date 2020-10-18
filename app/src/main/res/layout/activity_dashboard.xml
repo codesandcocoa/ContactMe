@@ -38,6 +38,8 @@
                 android:layout_below="@id/welcome_back"
                 >
                 <LinearLayout
+
+                    android:id="@+id/qr_scan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -52,7 +54,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="My Card"
+                        android:text="Add Card"
                         android:textStyle="bold"
                         android:textSize="18sp"
                         />
@@ -88,12 +90,12 @@
                     <ImageView
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:src="@drawable/ic_settings"
+                        android:src="@drawable/person_pin_icon"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Settings"
+                        android:text="My Card"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         />
