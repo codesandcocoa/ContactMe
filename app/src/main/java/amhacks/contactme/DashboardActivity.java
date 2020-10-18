@@ -59,7 +59,13 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(cIntent);
             }
         });
-
+        settingsLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent setIntent = new Intent(DashboardActivity.this, SettingsActivity.class);
+                startActivity(setIntent);
+            }
+        });
 
 
     }
